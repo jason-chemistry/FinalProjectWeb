@@ -54,7 +54,7 @@
     </update>
 
     <select id="needToDelete" resultMap="NeedToDelete">
-        select phoneNumber,Invitation_code,admin_name,del_time,contacts_name from admin where del_time &lt;=NOW()
+        select phoneNumber,Invitation_code,admin_name,del_time,contacts_name from admin where del_time is not null and del_time &lt;=NOW()
     </select>
 
 </mapper>
