@@ -43,10 +43,8 @@ public class UserController {
 
     @Autowired
     UserService userService;
-
     @Autowired
     ExcelService excelService;
-
     //获取微信openId
     @RequestMapping(value = "/GetOpenId",method = RequestMethod.GET)
     public void getOpenId (HttpServletResponse response, HttpServletRequest request)  throws ServletException, IOException {
